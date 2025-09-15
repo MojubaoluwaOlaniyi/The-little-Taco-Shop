@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        div{
+            border-bottom: thin solid black;
+            padding: 20px;
+        }
+        body {
+            max-width: 800px;   /* Keeps it centered on big screens */
+            border: thin solid black;
+            margin: auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Responsive table wrapper */
+        .table-container {
+            overflow-x: auto;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;   /* Makes table stretch within container */
+            min-width: 300px; /* Prevents breaking layout on small screens */
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Optional: Make text smaller on mobile */
+        @media (max-width: 500px) {
+            body {
+                padding: 10px;
+            }
+            th, td {
+                padding: 6px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+       <h1 id="top">The Little Tacos Shop Hours</h1>
+
+       <ul>
+           <li><a href="./index.html">Home</a></li>
+           <li><a href="./index.html#about">About LTS</a></li>
+           <li><a href="./index.html#menu">Our Menu</a></li> 
+           <li><a href="./contactus.html">Contact us</a></li>
+       </ul>
+ 
+           <img src="./tacos_tray_400x267.png" alt="">
+           <p>A tray of Tasty Tacos</p>
+      
+    </div>
+
+    <div>
+        <h1 id="about">About LTS</h1>
+        <h3>We are Open 7 days in a Week!</h3>
+
+        <h1>Tacos Trivials</h1>
+        <h3>Sunday-Thursday <br>
+            11am-9pm <br>
+            Friday-Saturday. <br>
+            11am-11pm
+        </h3>
+    </div>
+
+   
+
+    <a href="#top">Back to top</a>
+
+    <div>
+        <h2>Copywrite © The Little Tacos Shop</h2>
+    </div>
+</body>
+</html>

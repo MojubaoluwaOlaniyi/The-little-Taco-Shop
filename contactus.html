@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact LTS</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            max-width: 800px;
+            border: thin solid black;
+            margin: auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        h1, h2 {
+            margin-bottom: 10px;
+        }
+
+        /* Contact Form */
+        .contact-box {
+            border: 1px solid #999;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .contact-box h2 {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: inline-block;
+            width: 80px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 60%;
+            padding: 6px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 14px;
+        }
+
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        .form-actions {
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 6px 14px;
+            margin-right: 8px;
+            border: 1px solid #333;
+            border-radius: 4px;
+            background-color: #f2f2f2;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ddd;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 30px;
+            font-size: 14px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="top">Welcome to the Little Taco Shop</h1>
+
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html#about">About LTS</a></li>
+            <li><a href="./index.html#about">Our Menu</a></li>
+            <li><a href="">Store Hours</a></li>
+        </ul>
+
+        <img src="./tacos_close_up_400x260.png" alt="">
+        <p>Little Tacos Shop Tacoss</p>
+    </div>
+
+    <div>
+        <h1>Our Contact Form</h1>
+
+        <div class="contact-box">
+            <h2>Send Us a Message</h2>
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" placeholder="your name" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" placeholder="your email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" placeholder="Type your message here"></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="submit">Send</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <h1>Our Location</h1>
+        <p style="font-style: italic;">
+            200 University Road off University of Nigeria by
+            filling station Nsukka Enugu State, Nigeria.
+        </p>
+    </div>
+    <p>Phone: <a href="">+2348169433973</a></p>
+
+    <div class="footer">
+        <h2>Copyright © The Little Tacos Shop</h2>
+    </div>
+
+    <a href="#top">Back to top</a>
+</body>
+</html>
