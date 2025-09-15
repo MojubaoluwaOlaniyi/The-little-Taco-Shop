@@ -1,142 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact LTS</title>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        body {
-            max-width: 800px;
-            border: thin solid black;
-            margin: auto;
-            padding: 20px;
-            font-family: Arial, sans-serif;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact LTS</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
 
-        h1, h2 {
-            margin-bottom: 10px;
-        }
+    body {
+      max-width: 900px;
+      border: thin solid #ccc;
+      margin: auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
 
-        /* Contact Form */
-        .contact-box {
-            border: 1px solid #999;
-            padding: 20px;
-            margin-top: 20px;
-        }
+    h1, h2 {
+      margin-bottom: 10px;
+    }
 
-        .contact-box h2 {
-            margin-bottom: 15px;
-            font-size: 18px;
-        }
+    /* Navigation */
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
 
-        .form-group {
-            margin-bottom: 15px;
-        }
+    ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
 
-        label {
-            display: inline-block;
-            width: 80px;
-            font-weight: bold;
-        }
+    ul li a:hover {
+      color: #d35400;
+    }
 
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            width: 60%;
-            padding: 6px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-family: inherit;
-            font-size: 14px;
-        }
+    /* Images */
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
 
-        textarea {
-            height: 100px;
-            resize: vertical;
-        }
+    /* Contact Form */
+    .contact-box {
+      border: 1px solid #999;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 6px;
+    }
 
-        .form-actions {
-            margin-top: 10px;
-        }
+    .contact-box h2 {
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
 
-        button {
-            padding: 6px 14px;
-            margin-right: 8px;
-            border: 1px solid #333;
-            border-radius: 4px;
-            background-color: #f2f2f2;
-            cursor: pointer;
-        }
+    .form-group {
+      margin-bottom: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
 
-        button:hover {
-            background-color: #ddd;
-        }
+    label {
+      width: 100px;
+      font-weight: bold;
+    }
 
-        /* Footer */
-        .footer {
-            margin-top: 30px;
-            font-size: 14px;
-            text-align: center;
-        }
-    </style>
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      flex: 1;
+      min-width: 200px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 14px;
+    }
+
+    textarea {
+      height: 100px;
+      resize: vertical;
+    }
+
+    .form-actions {
+      margin-top: 10px;
+    }
+
+    button {
+      padding: 8px 16px;
+      margin-right: 8px;
+      border: 1px solid #333;
+      border-radius: 4px;
+      background-color: #f2f2f2;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ddd;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 30px;
+      font-size: 14px;
+      text-align: center;
+      color: #555;
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+
+      ul {
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .form-group {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      label {
+        width: 100%;
+        margin-bottom: 5px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 22px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div>
-        <h1 id="top">Welcome to the Little Taco Shop</h1>
+  <div>
+    <h1 id="top">Welcome to the Little Taco Shop</h1>
 
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./index.html#about">About LTS</a></li>
-            <li><a href="./index.html#about">Our Menu</a></li>
-            <li><a href="">Store Hours</a></li>
-        </ul>
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./index.html#about">About LTS</a></li>
+      <li><a href="./index.html#menu">Our Menu</a></li>
+      <li><a href="./index.html#hours">Store Hours</a></li>
+    </ul>
 
-        <img src="./tacos_close_up_400x260.png" alt="">
-        <p>Little Tacos Shop Tacoss</p>
-    </div>
+    <img src="./tacos_close_up_400x260.png" alt="Little Tacos Shop tacos">
+    <p>Little Tacos Shop Tacos</p>
+  </div>
 
-    <div>
-        <h1>Our Contact Form</h1>
+  <div>
+    <h1>Our Contact Form</h1>
 
-        <div class="contact-box">
-            <h2>Send Us a Message</h2>
-            <form action="">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" placeholder="your name" id="name">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" placeholder="your email" id="email">
-                </div>
-                <div class="form-group">
-                    <label for="msg">Message:</label>
-                    <textarea id="msg" placeholder="Type your message here"></textarea>
-                </div>
-                <div class="form-actions">
-                    <button type="submit">Send</button>
-                    <button type="reset">Reset</button>
-                </div>
-            </form>
+    <div class="contact-box">
+      <h2>Send Us a Message</h2>
+      <form action="">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" placeholder="Your name" id="name">
         </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" placeholder="Your email" id="email">
+        </div>
+        <div class="form-group">
+          <label for="msg">Message:</label>
+          <textarea id="msg" placeholder="Type your message here"></textarea>
+        </div>
+        <div class="form-actions">
+          <button type="submit">Send</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
     </div>
+  </div>
 
-    <div>
-        <h1>Our Location</h1>
-        <p style="font-style: italic;">
-            200 University Road off University of Nigeria by
-            filling station Nsukka Enugu State, Nigeria.
-        </p>
-    </div>
-    <p>Phone: <a href="">+2348169433973</a></p>
+  <div>
+    <h1>Our Location</h1>
+    <p style="font-style: italic;">
+      200 University Road off University of Nigeria by
+      filling station Nsukka Enugu State, Nigeria.
+    </p>
+    <p>Phone: <a href="tel:+2348169433973">+234 816 943 3973</a></p>
+  </div>
 
-    <div class="footer">
-        <h2>Copyright © The Little Tacos Shop</h2>
-    </div>
+  <div class="footer">
+    <p>&copy; The Little Tacos Shop</p>
+  </div>
 
-    <a href="#top">Back to top</a>
+  <a href="#top">Back to top</a>
 </body>
 </html>

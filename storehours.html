@@ -1,92 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        html{
-            scroll-behavior: smooth;
-        }
-        div{
-            border-bottom: thin solid black;
-            padding: 20px;
-        }
-        body {
-            max-width: 800px;   /* Keeps it centered on big screens */
-            border: thin solid black;
-            margin: auto;
-            padding: 20px;
-            font-family: Arial, sans-serif;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Little Tacos Shop</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
 
-        /* Responsive table wrapper */
-        .table-container {
-            overflow-x: auto;
-        }
+    body {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
 
-        table {
-            border-collapse: collapse;
-            width: 100%;   /* Makes table stretch within container */
-            min-width: 300px; /* Prevents breaking layout on small screens */
-        }
+    div {
+      border-bottom: thin solid #ccc;
+      padding: 20px 0;
+    }
 
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: center;
-        }
+    /* Navigation */
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
 
-        th {
-            background-color: #f2f2f2;
-        }
+    ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
 
-        /* Optional: Make text smaller on mobile */
-        @media (max-width: 500px) {
-            body {
-                padding: 10px;
-            }
-            th, td {
-                padding: 6px;
-                font-size: 14px;
-            }
-        }
-    </style>
+    ul li a:hover {
+      color: #d35400;
+    }
+
+    /* Images */
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    /* Responsive table wrapper */
+    .table-container {
+      overflow-x: auto;
+      margin: 20px 0;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      min-width: 300px;
+    }
+
+    th, td {
+      border: 1px solid #333;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f8f8f8;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+      margin-top: 20px;
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+
+      ul {
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      h3 {
+        font-size: 16px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div>
-       <h1 id="top">The Little Tacos Shop Hours</h1>
+  <div>
+    <h1 id="top">The Little Tacos Shop Hours</h1>
 
-       <ul>
-           <li><a href="./index.html">Home</a></li>
-           <li><a href="./index.html#about">About LTS</a></li>
-           <li><a href="./index.html#menu">Our Menu</a></li> 
-           <li><a href="./contactus.html">Contact us</a></li>
-       </ul>
- 
-           <img src="./tacos_tray_400x267.png" alt="">
-           <p>A tray of Tasty Tacos</p>
-      
-    </div>
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./index.html#about">About LTS</a></li>
+      <li><a href="./index.html#menu">Our Menu</a></li>
+      <li><a href="./contactus.html">Contact us</a></li>
+    </ul>
 
-    <div>
-        <h1 id="about">About LTS</h1>
-        <h3>We are Open 7 days in a Week!</h3>
+    <img src="./tacos_tray_400x267.png" alt="A tray of tasty tacos">
+    <p>A tray of Tasty Tacos</p>
+  </div>
 
-        <h1>Tacos Trivials</h1>
-        <h3>Sunday-Thursday <br>
-            11am-9pm <br>
-            Friday-Saturday. <br>
-            11am-11pm
-        </h3>
-    </div>
+  <div>
+    <h1 id="about">About LTS</h1>
+    <h3>We are Open 7 days a Week!</h3>
 
-   
+    <h1>Taco Trivials</h1>
+    <h3>
+      Sunday-Thursday: 11am - 9pm <br>
+      Friday-Saturday: 11am - 11pm
+    </h3>
+  </div>
 
-    <a href="#top">Back to top</a>
+  <a href="#top">Back to top</a>
 
-    <div>
-        <h2>Copywrite © The Little Tacos Shop</h2>
-    </div>
+  <footer>
+    <p>&copy; The Little Tacos Shop</p>
+  </footer>
 </body>
 </html>
